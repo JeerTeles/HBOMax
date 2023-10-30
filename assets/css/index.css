@@ -163,4 +163,42 @@ main {
   margin-bottom: 16px;
 }
 
-/* contents */
+/* Contents */
+.contents {
+    margin-top: 100px;
+}
+
+.contents__container {
+   margin: 40px; 
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 40px;
+}
+
+.contents__card {
+   border-radius: 16px;
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-position: center;
+   border: 2px solid transparent;
+   transition: transform 0.8s, background 0.8s, border 1s;
+}
+
+.contents__card:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.contents__card:hover .contents__image {
+    opacity: 0;
+}
+
+.contents__image {
+   width: 100%; 
+   object-fit: cover;
+   object-position: center;
+   transition: opacity 2s;
+}
+
+
+
