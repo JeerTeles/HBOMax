@@ -41,3 +41,51 @@ body {
 .login__label {
     text-align: left;
 }
+
+
+.login__field {
+    background: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    padding: 16px;
+    font-size: 1rem;
+}
+
+.login__field::placeholder {
+    color: var(--form-field-placeholder);
+}
+
+.login__field:invalid {
+    border-color: var(--form-field-error);
+}
+
+.login__actions {
+    margin-top: 24px;
+    text-align: left;
+}
+
+.login__link {
+    color: var(--link-color);
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+    body {
+      height: auto;
+    }
+  
+    .login__actions .button {
+      display: block;
+      margin-bottom: 24px;
+    }
+  
+    .login__link {
+      margin: 0;
+    }
+  }
+  
