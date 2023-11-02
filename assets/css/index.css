@@ -119,6 +119,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     transition: transform 1s ease-in-out;
+    cursor: pointer;
 }
 
 .subscription__plans:has(.subscription__card:nth-child(1):hover)
